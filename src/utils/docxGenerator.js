@@ -31,7 +31,7 @@ export const generateDocx = async (data) => {
               new Paragraph({
                 children: [
                   new TextRun({ text: `Company: ${el.company}`, bold: true }),
-                  new TextRun({ text: `Position: ${el.role}`}),
+                  new TextRun({ text: `Position: ${el.position}`}),
                   new TextRun({ text: `${el.years} years`, break: 1}),
 
                 ],

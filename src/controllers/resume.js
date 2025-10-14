@@ -2,6 +2,7 @@ import { createResumeService } from "../services/resume.js";
 import { resumeSchema } from "../validation/resume.js";
 
 export const generateResume = async (req, res) => {
+    console.log(req.body)
     const parseResult = resumeSchema.safeParse(req.body);
     if(!parseResult.success){
         return res.status(400).json({

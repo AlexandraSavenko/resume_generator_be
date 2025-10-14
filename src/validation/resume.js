@@ -9,8 +9,8 @@ export const resumeSchema = z.object({
   experience: z.array(
     z.object({
       company: z.string(),
-      role: z.string(),
-      years: z.number().min(0),
+      position: z.string(),
+      years: z.string().min(0),
     }),
   ),
 });
