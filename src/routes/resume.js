@@ -1,7 +1,9 @@
 import {Router} from "express";
-import { generateResume} from "../controllers/resume.js";
+import { downloadResume, generateResume, } from "../controllers/resume.js";
 
 const resumeRouter = Router();
 
 resumeRouter.post("/", generateResume);
+
+resumeRouter.get("/download/:fileName", downloadResume);
 export default resumeRouter;
