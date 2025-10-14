@@ -58,3 +58,30 @@ A simple Node.js backend project that generates resume documents (`.docx`) from 
 ### Download Resume
 
 - GET /resume/download/:fileName
+
+### The server will start at:
+- https://resume-generator-be.onrender.com
+
+### How to start the project locally:
+To run the project on your local machine, follow these steps:
+
+1. **Clone the repository**  
+```bash
+git clone https://github.com/AlexandraSavenko/resume_generator_be.git
+cd resume_generator
+Install dependencies
+
+- bash
+
+npm install
+or if you use yarn:
+
+yarn
+
+
+npm run dev
+or with yarn:
+
+yarn dev
+
+This will start your Node.js backend on http://localhost:3000 by default.
