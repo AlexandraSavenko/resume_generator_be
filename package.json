@@ -23,6 +23,7 @@
   "homepage": "https://github.com/AlexandraSavenko/resume_generator_be#readme",
   "dependencies": {
     "cors": "^2.8.5",
+    "docx": "^9.5.1",
     "express": "^5.1.0"
   },
   "devDependencies": {
