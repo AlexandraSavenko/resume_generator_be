@@ -7,7 +7,8 @@ export const generateResume = async (req, res) => {
     const parseResult = resumeSchema.safeParse(req.body);
     if(!parseResult.success){
         return res.status(400).json({
-            error: parseResult.error.message
+            error: parseResult.error.message,
+            body: req.body
         })
     }
     
