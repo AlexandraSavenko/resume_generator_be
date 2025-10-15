@@ -17,7 +17,7 @@ export const resumeSchema = z.object({
   education: z.array(
     z.object({
       place: z.string(),
-      grYear: z.number(),
+      grYear: z.string(),
     })
   )
 });
